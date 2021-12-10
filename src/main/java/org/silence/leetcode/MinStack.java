@@ -15,7 +15,7 @@ package org.silence.leetcode;
  */
 public class MinStack {
 
-    class Node {
+    static class Node {
         private int val;
         private Node next;
 
@@ -69,19 +69,26 @@ public class MinStack {
     }
 
 
+
+
     public static void main(String[] args) {
 //        ["MinStack","push","push","push","getMin","pop","top","getMin"]
 //        [[],[-2],[0],[-3],[],[],[],[]]
+//
+//        MinStack minStack = new MinStack();
+//        minStack.push(-2);
+//        minStack.push(0);
+//        minStack.push(-3);
+//        minStack.getMin();
+//        minStack.pop();
+//        minStack.top();
+//        minStack.getMin();
 
-        MinStack minStack = new MinStack();
-        minStack.push(-2);
-        minStack.push(0);
-        minStack.push(-3);
-        minStack.getMin();
-        minStack.pop();
-        minStack.top();
-        minStack.getMin();
-
+        Node node = new Node(1);
+        Node node2 = new Node(2);
+        Node node3 = new Node(3);
+        node.next = node2;
+        node2.next = node3;
 
     }
 }
