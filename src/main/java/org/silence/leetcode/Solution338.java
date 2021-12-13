@@ -12,6 +12,6 @@ public class Solution338 {
     }
 
     public int getBit(int n) {
-        return (n & 1) + arr[n / 2];
+        return (n & 1) + arr[n >>> 1];
     }
 }
